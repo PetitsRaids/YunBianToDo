@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="@dimen/padding_todo_list">
+
+    <ImageView
+        android:id="@+id/todoList_imageView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/des_todo_icon"
+        android:scaleType="center"
+        app:srcCompat="@drawable/icon_todo_list" />
+
+    <TextView
+        android:id="@+id/listName_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_start_list_name"
+        android:maxLines="@integer/max_line_list"
+        android:text="@string/app_name"
+        android:textSize="@dimen/font_size_todo_list" />
+</LinearLayout>

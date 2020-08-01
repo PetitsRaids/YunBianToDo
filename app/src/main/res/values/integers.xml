@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_line_list">1</integer>
+    <integer name="max_line_list_todo">2</integer>
+
+    <integer name="anim_time">300</integer>
+    <integer name="max_line_add_todo">1</integer>
+</resources>

@@ -1,3 +1,19 @@
-<resources>
-    <string name="app_name">YunBianToDo</string>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">YunBianToDo</string>
+
+    <string name="des_todo_icon" translatable="false">The ToDo icon</string>
+    
+    <string name="urgent_and_important" translatable="false">Urgent and Important</string>
+    <string name="not_urgent_but_important" translatable="false">Not Urgent but Important</string>
+    <string name="urgent_but_not_important" translatable="false">Urgent but Not Important</string>
+    <string name="not_urgent_and_not_important" translatable="false">Not Urgent and Not Important</string>
+    <string name="everyday_event">Everyday Event</string>
+
+    <string name="cancel" tools:ignore="ButtonCase">cancel</string>
+
+    <string name="add">add</string>
+    <string name="add_todo_hint">Input ToDo</string>
+    <string name="des_add_todo">The add todo button</string>
+
+
 </resources>

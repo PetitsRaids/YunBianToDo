@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">云边代办</string>
+
+    <string name="des_todo_icon" translatable="false">代办logo</string>
+
+    <string name="urgent_and_important" translatable="false">重要且紧急</string>
+    <string name="not_urgent_but_important" translatable="false">重要不紧急</string>
+    <string name="urgent_but_not_important" translatable="false">紧急不重要</string>
+    <string name="not_urgent_and_not_important" translatable="false">不紧急不重要</string>
+    <string name="everyday_event">日常事项</string>
+
+    <string name="cancel">取消</string>
+    <string name="add">添加</string>
+    <string name="add_todo_hint">Input ToDo</string>
+    <string name="des_add_todo">The add todo button</string>
+
+</resources>

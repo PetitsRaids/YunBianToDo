@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_todo_list">10dp</dimen>
+    <dimen name="padding_single_list">18dp</dimen>
+    <dimen name="padding_single_list_outer">2dp</dimen>
+
+    <dimen name="margin_start_list_name">10dp</dimen>
+    <dimen name="margin_single_list">2dp</dimen>
+    <dimen name="margin_single_list_text_cell">10dp</dimen>
+    <dimen name="margin_add_todo_fab">20dp</dimen>
+
+    <dimen name="height_toolbar">100dp</dimen>
+    <dimen name="height_add_bar">50dp</dimen>
+
+    <!-- split lines -->
+    <dimen name="font_size_todo_list">18sp</dimen>
+    <dimen name="font_size_single_list">24sp</dimen>
+    <dimen name="height_editText">30dp</dimen>
+    <dimen name="padding_add_layout">8dp</dimen>
+</resources>
