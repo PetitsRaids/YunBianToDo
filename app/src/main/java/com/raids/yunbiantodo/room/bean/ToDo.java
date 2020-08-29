@@ -1,9 +1,12 @@
-package com.raids.yunbiantodo.bean;
+package com.raids.yunbiantodo.room.bean;
+
+import androidx.room.Entity;
 
 import com.raids.yunbiantodo.support.utils.ToDoType;
 
 import java.util.List;
 
+@Entity(tableName = "todo")
 public class ToDo {
     private int id;
 

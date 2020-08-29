@@ -14,5 +14,7 @@
     <string name="add">添加</string>
     <string name="add_todo_hint">Input ToDo</string>
     <string name="des_add_todo">The add todo button</string>
+    <string name="hint_enter_todo_name">Enter ToDo Name Here</string>
+    <string name="select_todo_type">Select ToDo Type</string>
 
 </resources>

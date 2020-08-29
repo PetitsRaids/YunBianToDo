@@ -1,4 +1,4 @@
-package com.raids.yunbiantodo.bean;
+package com.raids.yunbiantodo.room.bean;
 
 public class ToDoStep {
     private int id;

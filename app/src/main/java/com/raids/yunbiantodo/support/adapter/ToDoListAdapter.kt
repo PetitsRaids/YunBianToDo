@@ -12,7 +12,7 @@ import androidx.navigation.Navigation
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.raids.yunbiantodo.R
-import com.raids.yunbiantodo.bean.ToDoList
+import com.raids.yunbiantodo.room.bean.ToDoList
 import com.raids.yunbiantodo.support.utils.MyConstValue
 import com.raids.yunbiantodo.support.utils.toast
 

@@ -26,47 +26,52 @@
         android:padding="@dimen/padding_single_list_outer"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
-        <LinearLayout
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/singleList_recyclerView"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent"/>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/singleList_recyclerView"
-                android:layout_width="match_parent"
-                android:layout_height="0dp"
-                android:layout_weight="1" />
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
 
-            <LinearLayout
-                android:id="@+id/add_todo_layout"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/height_add_bar"
-                android:orientation="horizontal"
-                android:padding="@dimen/padding_add_layout"
-                android:visibility="gone">
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/singleList_recyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                android:layout_weight="1" />-->
 
-                <EditText
-                    android:id="@+id/add_todo_editText"
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/height_editText"
-                    android:layout_weight="1"
-                    android:autofillHints="@string/add_todo_hint"
-                    android:background="@color/orangeTest"
-                    android:labelFor="@id/add_todo_editText"
-                    android:maxLines="@integer/max_line_add_todo"
-                    android:textSize="@dimen/font_size_single_list" />
+<!--            <LinearLayout-->
+<!--                android:id="@+id/add_todo_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="@dimen/height_add_bar"-->
+<!--                android:orientation="horizontal"-->
+<!--                android:padding="@dimen/padding_add_layout"-->
+<!--                android:visibility="gone">-->
 
-                <ImageButton
-                    android:id="@+id/add_todo_imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@android:color/transparent"
-                    android:contentDescription="@string/des_add_todo"
-                    app:srcCompat="@drawable/icon_add" />
+<!--                <EditText-->
+<!--                    android:id="@+id/add_todo_editText"-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="@dimen/height_editText"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:autofillHints="@string/add_todo_hint"-->
+<!--                    android:background="@color/orangeTest"-->
+<!--                    android:labelFor="@id/add_todo_editText"-->
+<!--                    android:maxLines="@integer/max_line_add_todo"-->
+<!--                    android:textSize="@dimen/font_size_single_list" />-->
 
-            </LinearLayout>
-        </LinearLayout>
+<!--                <ImageButton-->
+<!--                    android:id="@+id/add_todo_imageView"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@android:color/transparent"-->
+<!--                    android:contentDescription="@string/des_add_todo"-->
+<!--                    app:srcCompat="@drawable/icon_add" />-->
+
+<!--            </LinearLayout>-->
+<!--        </LinearLayout>-->
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

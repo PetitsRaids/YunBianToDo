@@ -10,7 +10,7 @@ class SingleFragmentViewModel(application: Application) : AndroidViewModel(appli
     val isInputtingLive: MediatorLiveData<Boolean> = MediatorLiveData()
 
 
-    public fun setInputState(isInputting: Boolean) {
+    fun setInputState(isInputting: Boolean) {
         isInputtingLive.value = isInputting
     }
 

@@ -11,8 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.raids.yunbiantodo.R
 import com.raids.yunbiantodo.support.adapter.ToDoListAdapter
 import com.raids.yunbiantodo.base.BaseFragment
-import com.raids.yunbiantodo.bean.ToDo
-import com.raids.yunbiantodo.bean.ToDoList
+import com.raids.yunbiantodo.room.bean.ToDo
+import com.raids.yunbiantodo.room.bean.ToDoList
 import com.raids.yunbiantodo.support.utils.MyConstValue
 import com.raids.yunbiantodo.viewmodel.MainFragmentViewModel
 
@@ -38,7 +38,7 @@ class MainFragment : BaseFragment() {
             Observer<ToDo> { TODO("Not yet implemented") })
     }
 
-    override fun initView() {
+    override fun initViewAndData() {
         todoListRecyclerView = requireView().findViewById(R.id.todoList_recyclerView)
         todoListAdapter = ToDoListAdapter(
             requireContext(), arrayListOf(

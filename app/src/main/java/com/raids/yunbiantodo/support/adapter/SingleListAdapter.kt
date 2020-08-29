@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.raids.yunbiantodo.R
-import com.raids.yunbiantodo.bean.ToDo
+import com.raids.yunbiantodo.room.bean.ToDo
 import com.raids.yunbiantodo.support.utils.toast
 
 class SingleListAdapter(private val context: Context, private val singleList:ArrayList<ToDo>) : RecyclerView.Adapter<SingleListAdapter.ViewHolder>() {

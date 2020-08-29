@@ -22,7 +22,7 @@ class DetailsFragment:BaseFragment() {
 
     }
 
-    override fun initView() {
+    override fun initViewAndData() {
 
     }
 }
