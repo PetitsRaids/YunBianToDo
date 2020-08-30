@@ -1,17 +1,18 @@
 package com.raids.yunbiantodo.room.bean;
 
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import java.util.List;
 
 @Entity(tableName = "todo_list")
 public class ToDoList {
 
+    @PrimaryKey
     private int id;
 
     private String listName;
 
-    private List<ToDo> toDoList;
 
     public ToDoList(int id, String listName) {
         this.id = id;
@@ -34,11 +35,4 @@ public class ToDoList {
         this.listName = listName;
     }
 
-    public List<ToDo> getToDoList() {
-        return toDoList;
-    }
-
-    public void setToDoList(List<ToDo> toDoList) {
-        this.toDoList = toDoList;
-    }
 }

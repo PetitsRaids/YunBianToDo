@@ -1,14 +1,17 @@
 package com.raids.yunbiantodo.room.dao
 
-import androidx.room.Dao
-import androidx.room.Query
+import androidx.room.*
 import com.raids.yunbiantodo.room.bean.ToDoList
 
 @Dao
 interface ToDoListDao {
 
-    @Query("SELECT * FROM todolist")
+    @Query("SELECT * FROM todo_list")
     fun getAllList(): List<ToDoList>
 
-    fun removeList(listId:Int)
+    @Delete
+    fun removeList(listId: Int)
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertToDoList(toDoList: ToDoList)
 }

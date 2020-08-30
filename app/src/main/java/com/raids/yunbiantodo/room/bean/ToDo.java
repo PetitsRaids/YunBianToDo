@@ -1,6 +1,7 @@
 package com.raids.yunbiantodo.room.bean;
 
 import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
 import com.raids.yunbiantodo.support.utils.ToDoType;
 
@@ -8,6 +9,8 @@ import java.util.List;
 
 @Entity(tableName = "todo")
 public class ToDo {
+
+    @PrimaryKey
     private int id;
 
     private int listId;
@@ -19,8 +22,6 @@ public class ToDo {
     private ToDoType todoType;
 
     private String remarks;
-
-    private List<ToDoStep> stepList;
 
     public ToDo(String toDoName, boolean isCompleted) {
         this.toDoName = toDoName;
@@ -65,14 +66,6 @@ public class ToDo {
 
     public void setCompleted(boolean completed) {
         isCompleted = completed;
-    }
-
-    public List<ToDoStep> getStepList() {
-        return stepList;
-    }
-
-    public void setStepList(List<ToDoStep> stepList) {
-        this.stepList = stepList;
     }
 
     public String getRemarks() {
